@@ -13,6 +13,8 @@ function setCardType(type) {
   const colors = {
     visa: ["#436D99", "#2D57F2"],
     mastercard: ["#DF6F29", "#C69347"],
+    cielo: ["#000000", "#E32DF2"],
+    roka: ["#0B402A", "#2D57F2"],
     default: ["black", "gray"],
   }
 
