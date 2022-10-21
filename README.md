@@ -47,4 +47,4 @@ Esse projeto está sob a licença MIT.
 
 Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
 
-[X] - adiciona mais modelos do cartão
+[X] - adicionar mais modelos do cartão

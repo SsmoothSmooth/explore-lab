@@ -87,3 +87,56 @@ const cardNumberPattern = {
 }
 
 const cardNumberMasked = IMask(cardNumber, cardNumberPattern)
+
+// wait click the button
+const addButton = document.querySelector("#add-card")
+addButton.addEventListener("click", () => {
+  alert("add card")
+})
+
+// disable form reload
+document.querySelector("form").addEventListener("submit", (event) => {
+  event.preventDefault()
+})
+
+// DOM obtendo e exibindo o Nome do titular
+const cardHolder = document.querySelector("#card-holder")
+cardHolder.addEventListener("input", () => {
+  const ccHolder = document.querySelector(".cc-holder .value")
+
+  ccHolder.innerHTML =
+    cardHolder.value.length === 0 ? "FULANDO DA SILVA" : cardHolder.value
+})
+
+// DOM obtendo e exibindo o CVC
+securityCodeMasked.on("accept", () => {
+  updateSecurityCode(securityCodeMasked.value)
+})
+
+function updateSecurityCode(code) {
+  const ccSecurity = document.querySelector(".cc-security .value")
+
+  ccSecurity.innerHTML = code.length === 0 ? "123" : code
+}
+
+// DOM obtendo e exibindo o Número do cartão
+cardNumberMasked.on("accept", () => {
+  const cardType = cardNumberMasked.masked.currentMask.cardtype
+  setCardType(cardType)
+  updateCardNumber(cardNumberMasked.value)
+})
+
+function updateCardNumber(number) {
+  const ccNumber = document.querySelector(".cc-number")
+  ccNumber.innerHTML = number.length === 0 ? "1234 5678 9012 3456" : number
+}
+
+// DOM obtendo e exibindo a data de Expiração do cartão
+expirationDateMasked.on("accept", () => {
+  updateExpirationDate(expirationDateMasked.value)
+})
+
+function updateExpirationDate(date) {
+  const ccExpiration = document.querySelector(".cc-extra .value")
+  ccExpiration.innerHTML = date.length === 0 ? "02/32" : date
+}
