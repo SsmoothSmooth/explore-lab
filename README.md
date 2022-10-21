@@ -39,6 +39,10 @@ O Smoothpay é um componente que simula o formulário de preenchimento de cartã
 
 Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/XxcKy7I7r8URNHLuqZWBBR/SmoothPay?node-id=0%3A1). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
+## Deploy
+
+Você pode encontrar esse pojeto em deploy com ajuda da vercel neste [LINK](https://smoothpay-blond.vercel.app/)
+
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT.
